@@ -1,0 +1,174 @@
+/* Main.css for OBAA.IO personal portfolio site
+Agbana Bolu
+301280402
+June 11, 2023 */
+
+/* Global site styles */
+
+a {
+  color: #009e66;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color:whitesmoke;
+}
+
+.pageWrapper {
+  min-height: 100vh; 
+  background: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageSection {
+  flex-grow: 1;
+}
+
+.sectionTitle {
+  font-size: 25px;
+  margin-top: 75px;
+  margin-bottom: 25px;
+  color: #009e66;
+}
+
+
+/* Custom bootstrap overrrides */
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #009e66;
+  --bs-btn-border-color: #009e66;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #14ad78;
+  --bs-btn-hover-border-color: #0fa772;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #14ad78;
+  --bs-btn-active-border-color: #0fa772;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #009e66;
+  --bs-btn-disabled-border-color: #009e66;
+}
+
+.modal-content {
+  background: black;
+  border: 1px solid #009e66;
+  color: white !important;
+}
+
+.modal-header {
+  border-bottom: 1px solid #009e66;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-footer {
+  border-top: 1px solid #009e66;
+}
+
+/* Header section styles */
+
+.section-header {
+  border-bottom: 1px solid #009e66;
+  min-height: 75px;
+}
+
+.section-header .nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-header .nav-menu .nav-link {
+  font-size: 25px;
+  margin: 10px 15px;
+}
+
+.section-header .nav-link {
+  color:whitesmoke;
+}
+
+
+
+/* About section styles */
+
+.section-about .introduction {
+  width: 50%;
+  padding: 10px 15px;
+  border: 1px solid #009e66;
+}
+
+.section-about .service:hover {
+  border-bottom: 2px solid #009e66;
+  color: black;
+}
+
+
+/* Services section styles */
+
+.section-services .service {
+  padding: 20px 10px 10px;
+  min-width: 320px;
+  border: 1px solid #009e66;
+}
+
+.section-services .service:hover {
+  border: 2px solid gray;
+}
+
+
+
+/* Projects section styles */
+
+.section-projects {
+  margin-bottom: 100px;
+}
+
+.section-projects .project-placeholder {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.section-projects .project:hover {
+  color: #009e66 !important;
+}
+
+
+
+/* Contact Me section styles */
+
+.section-contact-me {
+  margin-bottom: 100px;
+}
+
+.section-contact-me .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-contact-me .meta svg {
+  color: #009e66;
+  margin-right: 5px;
+}
+
+.section-contact-me .meta .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section-contact-me .meta .data {
+  font-size: 20px;
+  font-style: italic;
+}

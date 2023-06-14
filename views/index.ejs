@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./partials/head'); %>
+</head>
+
+<body>
+
+  <div class="pageWrapper">
+    <header>
+      <%- include('./partials/header'); %>
+    </header>
+  
+    <main class="pageSection">
+      <div class="container text-center ">
+        <h3 class="mt-3"><%= title %></h3>
+    
+        <div class="mt-5">
+          <h1>AGBANA BOLU</h1>
+          <p>Fullstack Developer and Operations Engineer</p>
+        </div>
+        
+        <div class="bg-light text-muted w-50 mx-auto mt-5 p-3">
+          <p>
+            Hi, I am a self-taught software developer with over 6 years 
+            of professional start up experience. I have designed, built, 
+            and managed various complex projects individually and in teams 
+            all ranging from simple monoliths to micro-services-based 
+            architectures including multi-tenant systems and event-driven 
+            SAAS applications.
+          </p>
+        </div>
+      </div>
+    </main>
+  
+    <footer>
+      <%- include('./partials/footer'); %>
+    </footer>
+  </div>
+
+  <%- include('./partials/scripts'); %>
+
+</body>
+</html>

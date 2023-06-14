@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+
+<body>
+
+  <div class="pageWrapper">
+
+    <!-- Header Section of OBAA.IO portforlio site -->
+    <header>
+      <%- include('../partials/header'); %>
+    </header>
+  
+    <!-- Main page content wrapper -->
+    <main class="pageSection">
+
+        <!-- Projects Section of OBAA.IO portforlio site -->
+        <div class="section-contact-me container">
+
+            <div class="row">
+                <div class="col-12 col-lg-5 mx-auto">
+                    <h3 class="sectionTitle">Contact Info</h3>
+
+                    <div class="mt-3">
+                        <p>Always available for freelance work if the right project comes along, Feel free to contact me!</p>
+                    </div>
+
+                    <div class="meta my-5">
+                        <div class="title">
+                            <span class="iconify" data-icon="carbon:location-filled"></span>
+                            Location
+                        </div>
+
+                        <div class="data">
+                            Toronto, Ontario, Canada.
+                        </div>
+                    </div>
+
+                    <div class="meta my-5">
+                        <div class="title">
+                            <span class="iconify" data-icon="carbon:email"></span>
+                            Email
+                        </div>
+
+                        <div class="data">
+                            <a href="mailto:obaa@obaa.cloud">obaa[at]obaa[dot]cloud</a>
+                        </div>
+                    </div>
+
+                    <div class="meta my-5">
+                        <div class="title">
+                            <span class="iconify" data-icon="carbon:phone"></span>
+                            Mobile
+                        </div>
+
+                        <div class="data">
+                            <a href="tel:+6475761625">+6475761625</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 mx-auto">
+                    <h3 class="sectionTitle">Message me</h3>
+
+                    <div class="mt-3">
+                        <p>Leave me a message by making use of the form below;</p>
+                    </div>
+        
+                    <div class="contact-form mt-5">
+                        <form class="row">
+                            <div class="col-md-6 mb-5">
+                                <label for="inputFirstName" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="inputFirstName">
+                            </div>
+                            <div class="col-md-6 mb-5">
+                                <label for="inputLastName" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="inputLastName">
+                            </div>
+                            <div class="col-12 mb-5">
+                                <label for="inputEmailAddress" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmailAddress">
+                            </div>
+                            <div class="col-12 mb-5">
+                              <label for="InputMessage">Message</label>
+                              <textarea class="form-control mt-2" id="InputMessage">
+                              </textarea>
+                            </div>
+        
+                            <div class="col-12 text-end mb-5">
+                                <button type="submit" class="btn btn-primary" id="contactFormButton">
+                                    Submit
+                                </button>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section of OBAA.IO portforlio site -->  
+    <footer>
+      <%- include('../partials/footer'); %>
+    </footer>
+  </div>
+
+  <%- include('../partials/scripts'); %>
+
+</body>
+</html>

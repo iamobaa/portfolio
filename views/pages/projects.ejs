@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+
+<body>
+
+  <div class="pageWrapper">
+
+    <!-- Header Section of OBAA.IO portforlio site -->
+    <header>
+      <%- include('../partials/header'); %>
+    </header>
+  
+    <!-- Main page content wrapper -->
+    <main class="pageSection">
+
+        <!-- Projects Section of OBAA.IO portforlio site -->
+        <div class="section-projects container text-center">
+            <h3 class="sectionTitle"><%= title %></h3>
+
+            <div class="mt-3">
+                <p>These are a few projects i have worked on</p>
+            </div>
+
+            <div class="project-list row mt-5">
+                <div class="project col-12 col-lg-4 mx-auto mb-5">
+                    <div class="project-placeholder" style="background-image: url('/images/projects/sellsar-screen-capture.jpg');">
+                        <button type="button" class="btn btn-primary text-light mx-2" data-bs-toggle="modal" data-bs-target="#sellsarModal">
+                            Preview
+                            <span class="iconify" data-icon="ion:eye"></span>
+                        </button>
+                    </div>
+                    <h5 class="mt-3">Sellsar</h5>
+                </div>
+
+                <div class="project col-12 col-lg-4 mx-auto mb-5">
+                    <div class="project-placeholder" style="background-image: url('/images/projects/234parts-screen-capture.jpg');">
+                        <button type="button" class="btn btn-primary text-light mx-2" data-bs-toggle="modal" data-bs-target="#234partsModal">
+                            Preview
+                            <span class="iconify" data-icon="ion:eye"></span>
+                        </button>
+                    </div>
+                    <h5 class="mt-3">234Parts</h5>
+                </div>
+
+                <div class="project col-12 col-lg-4 mx-auto mb-5">
+                    <div class="project-placeholder" style="background-image: url('/images/projects/grabba-screen-capture.jpg');">
+                        <button type="button" class="btn btn-primary text-light mx-2" data-bs-toggle="modal" data-bs-target="#grabbaModal">
+                            Preview
+                            <span class="iconify" data-icon="ion:eye"></span>
+                        </button>
+                    </div>
+                    <h5 class="mt-3">Grabba</h5>
+                </div>
+
+                <div class="project col-12 col-lg-4 mx-auto mb-5">
+                    <div class="project-placeholder" style="background-image: url('/images/projects/vsg-screen-capture.jpg');">
+                        <button type="button" class="btn btn-primary text-light mx-2" data-bs-toggle="modal" data-bs-target="#velcroModal">
+                            Preview
+                            <span class="iconify" data-icon="ion:eye"></span>
+                        </button>
+                    </div>
+                    <h5 class="mt-3">Velcro Gaming</h5>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Sellsar Modal -->
+        <div class="modal fade" id="sellsarModal" tabindex="-1" aria-labelledby="sellsarModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content text-muted">
+                <div class="modal-header">
+                <h5 class="modal-title" id="sellsarModalLabel">Sellsar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img height="auto" width="100%" src="/images/projects/sellsar-screen-capture.jpg" />
+                    <p class="mt-3">
+                        I founded and developed Sellsar as way to fix issues i encountered 
+                        as a small business owner in Africa. <br/>Sellsar is an ecommerce 
+                        software that allows sellers create their custom storefronts in minutes 
+                        also allowing them the ease of taking local and international orders 
+                        through integrations to various payment and shipping providers. <br/>
+                        Sellsar runs python primarily backend and is currently deployed on a 
+                        kubernetes cluster with most of the frontend in React.js
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="https://www.sellsar.com/" target="_blank" class="btn btn-primary">
+                        Visit <span class="iconify" data-icon="ion:globe"></span>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- 234Parts Modal -->
+        <div class="modal fade" id="234partsModal" tabindex="-1" aria-labelledby="234partsModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content text-muted">
+                <div class="modal-header">
+                <h5 class="modal-title" id="234partsModalLabel">234Parts</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img height="auto" width="100%" src="/images/projects/234parts-screen-capture.jpg" />
+                    <p class="mt-3">
+                        I was the Lead software engineer at Spareworks limited where I built 
+                        and managed the entire backend that powers the 234parts web app and 
+                        all its mobile applications. <br/>I was also responsible for developing 
+                        the vendor mobile app (React native), diagnostics agent mobile app 
+                        (React native) and all the custom CRM dashboard used to manage 
+                        operations on all of 234parts.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="https://www.234parts.com/" target="_blank" class="btn btn-primary">
+                        Visit <span class="iconify" data-icon="ion:globe"></span>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <!-- Grabba Modal -->
+        <div class="modal fade" id="grabbaModal" tabindex="-1" aria-labelledby="grabbaModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content text-muted">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="grabbaModalLabel">Grabba</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img height="auto" width="100%" src="/images/projects/grabba-screen-capture.jpg" />
+                        <p class="mt-3">
+                            Grabba is at the bare minimum a website screenshot tool. You pass a URL 
+                            to it and it captures the live page according to the configurations 
+                            attached to the request. <br/>The basic business use case would be for 
+                            generating PDF files from a URL that contains HTML invoices, receipts, 
+                            certificates or the likes. <br/> I built Grabba with Nest.js running as 
+                            an API backend in a docker container and React.js at the frontend.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="https://www.grabba.site/" target="_blank" class="btn btn-primary">
+                            Visit <span class="iconify" data-icon="ion:globe"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Velcro Gaming Modal -->
+        <div class="modal fade" id="velcroModal" tabindex="-1" aria-labelledby="velcroModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content text-muted">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="velcroModalLabel">Velcro Gaming</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img height="auto" width="100%" src="/images/projects/vsg-screen-capture.jpg" />
+                        <p class="mt-3">
+                            I co-founded Velcro gaming with a friend to serve as a marketplace for 
+                            buying, selling, and trading video game cd's which tend to be a problem 
+                            unique to gamers with CD based consoles. <br/>I built the entire project in 
+                            a micro-services architecture with the back-end built with Django and 
+                            its dependent services running within docker containers and the front-end in React 
+                            Js translated completely from a Figma design.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="https://velcrogaming.obaa.cloud/" target="_blank" class="btn btn-primary">
+                            Visit <span class="iconify" data-icon="ion:globe"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer Section of OBAA.IO portforlio site -->  
+    <footer>
+      <%- include('../partials/footer'); %>
+    </footer>
+  </div>
+
+  <%- include('../partials/scripts'); %>
+
+</body>
+</html>

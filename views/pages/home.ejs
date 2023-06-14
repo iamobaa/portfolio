@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+
+<body>
+
+  <div class="pageWrapper">
+
+    <!-- Header Section of OBAA.IO portforlio site -->
+    <header>
+      <%- include('../partials/header'); %>
+    </header>
+  
+    <!-- Main page content wrapper -->
+    <main class="pageSection">
+
+        <!-- About Section of OBAA.IO portforlio site -->
+        <div class="section-about container text-center">
+            <h3 class="sectionTitle"><%= title %></h3>
+
+            <div class="mt-3">
+                <h1>AGBANA BOLU</h1>
+                <p>Fullstack Developer and Operations Engineer</p>
+            </div>
+            
+            <div class="introduction mx-auto mt-5">
+                <p class="m-0">
+                    I am a software developer with over 6 years 
+                    of professional start up experience. I have designed, built, 
+                    and managed various complex projects individually and in teams 
+                    all ranging from simple monoliths to micro-services-based 
+                    architectures including multi-tenant systems and event-driven 
+                    SAAS applications.
+                </p>
+            </div>
+
+            <div class="d-flex justify-content-center my-5">
+                <a href="/resume/download" class="btn btn-primary text-light mx-2">
+                    Download Resume
+                </a>
+            </div>
+        </div>
+
+        <!-- My services Section of OBAA.IO portforlio site -->
+        <div class="section-services container text-center my-5">
+            <h3 class="sectionTitle">My Services</h3>
+        
+            <div class="row gx-2 mx-auto">
+                <div class="service col-12 col-lg-3 mb-5 mx-auto">
+                    <span data-width="50" data-height="50" class="iconify" data-icon="ion:logo-html5"></span>
+                    <h5 class="fw-bold mt-3">Web Development</h5>
+                    <p>Lets transform that brewing idea into a full fledged product.</p>
+                </div>
+        
+                <div class="service col-12 col-lg-3 mb-5 mx-auto">
+                    <span data-width="50" data-height="50" class="iconify" data-icon="ion:phone-portrait"></span>
+                    <h5 class="fw-bold mt-3">Mobile Development</h5>
+                    <p>Lets Create the next viral mobile application. Android and iOS. </p>
+                </div>
+        
+                <div class="service col-12 col-lg-3 mb-5 mx-auto">
+                    <span data-width="50" data-height="50" class="iconify" data-icon="bxs:rocket"></span>
+                    <h5 class="fw-bold mt-3">Product branding</h5>
+                    <p>Let's discuss strategies to stand out from the crowd of competitors.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section of OBAA.IO portforlio site -->  
+    <footer>
+      <%- include('../partials/footer'); %>
+    </footer>
+  </div>
+
+  <%- include('../partials/scripts'); %>
+
+</body>
+</html>

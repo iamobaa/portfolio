@@ -1,0 +1,19 @@
+# LANDING
+# dcr.svc.obaa.cloud/obaaio-web:v0.1
+# docker build -f Dockerfile -t dcr.svc.obaa.cloud/obaaio-web:v0.1 .
+# ---
+
+version: '3.7'
+
+services:
+  obaaio-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dcr.svc.obaa.cloud/obaaio-web:v0.1
+    container_name: obaaio-web
+    volumes:
+      - ./:/app/
+      - ./node_modules:/app/node_modules/
+    ports:
+      - 3001:80
