@@ -6,7 +6,9 @@ June 11, 2023 */
 // Create event listeners to watch for "Click" action on the Contact format
 
 let contactFormButton = document.querySelector("#contactFormButton");
-contactFormButton.addEventListener("click", contactFormOnsubmit, false);
+if (contactFormButton) {
+    contactFormButton.addEventListener("click", contactFormOnsubmit, false);
+}
 
 function contactFormOnsubmit(event) {
     event.preventDefault();
