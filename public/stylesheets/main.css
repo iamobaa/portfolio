@@ -29,11 +29,14 @@ body {
 
 .sectionTitle {
   font-size: 25px;
-  margin-top: 75px;
+  margin-top: 50px;
   margin-bottom: 25px;
   color: #009e66;
 }
 
+.color-primary {
+  color: #009e66 !important;
+}
 
 /* Custom bootstrap overrrides */
 
@@ -98,10 +101,17 @@ body {
 
 /* About section styles */
 
+.section-about .avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid #009e66;
+}
+
 .section-about .introduction {
   width: 50%;
   padding: 10px 15px;
-  border: 1px solid #009e66;
+  /* border: 1px solid #009e66; */
 }
 
 .section-about .service:hover {
